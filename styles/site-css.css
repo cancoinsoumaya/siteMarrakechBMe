@@ -1,0 +1,455 @@
+ /* Start Reset Some Elements */
+ 
+ html,
+ body,
+
+ ul {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ ul,
+ ol {
+    list-style: none;
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+ 
+ .clearfix {
+    clear: both;
+ }
+ /* End Reset Some Elements */
+ 
+
+ 
+ .containerNav {
+    width: 85%;
+    margin: 0 auto;
+ }
+ /* Start Toggle */
+ 
+ .ligne {
+    width: 30px;
+    padding: 10px;
+    float: right;
+    background-color: #111213;
+    border-radius: 10px;
+    margin: 6px;
+    cursor: pointer;
+    display: none;
+ }
+ 
+ .ligne span {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 3px;
+ }
+ /* End Toggle */
+ /* Start Logo */
+ 
+ .navSite .containerNav .logo {
+    width: 15%;
+    float: left;
+    padding-top: 8px;
+ }
+
+ /* End Logo */
+ /* Start Links */
+ 
+ .navSite .containerNav .links {
+    width: 85%;
+    float: left;
+ }
+ 
+ .navSite .containerNav .links ul {
+    float: right;
+ }
+ 
+ .navSite .containerNav .links ul li {
+    display: inline-block;
+    padding: 20px;
+    padding-top: 50px;
+ }
+ 
+ .navSite .containerNav .links ul li a {
+    color: #473b3b;
+    font-size: 18px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+ }
+
+/* End Intro */
+ /* Media Query */
+ 
+ @media(max-width:768px) {
+    .ligne {
+       display: block;
+    }
+    .links {
+       display: none;
+    }
+    .navSite .containerNav .links ul li {
+       display: block;
+       text-align: center;
+       padding: 10px;
+    }
+    .navSite .containerNav .links ul {
+       float: none;
+    }
+    .navSite .containerNav .logo {
+       padding-top: 10px;
+    }
+    .logo{
+      width: 25px;
+    }
+ }
+
+#section1{
+  padding-top: 50%;
+  /*! padding-left: 49%; */
+
+}
+#section2 span{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  /* margin-left: -15px; */
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+/* le css de button scroll */
+#section2 a span:before {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	content: "";
+	width: 6px;
+	height: 6px;
+	margin-left: -3px;
+	background-color: #fff;
+	border-radius: 100%;
+	animation: sdb10 2s infinite;
+	box-sizing: border-box;
+}
+
+@keyframes sdb10 {
+	0% {
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+/* le css de la page des activité */
+/* photo 1 c'st la classe des figure de ma page d'activité  */
+.photo1 {
+  font-family: 'Quattrocento', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+.photo1 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+/* css de l'image de chaque figure */
+.photo1 img {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+ #activité{
+   display: flex;
+ }
+ /* le css pour mettre le h2 sur la photo  */
+ .photo1 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 25px 65px;
+}
+/* le css pour avoir un petit opacity a la fin de la photo */
+.photo1 figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+ 
+
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.photo1 h2
+ {
+  margin: 0 0 5px;
+}
+/* le css de le font de h2 */
+.photo1 h2 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: center;
+  
+}
+.photo1 a {
+  text-decoration: none;
+  padding:90px ;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: rgb(218, 78, 53);
+
+}
+.pActivité{
+  padding-top: 50%;
+  font-size: 1.8em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: center;
+  background-image: url('activite.jpg');
+  background-repeat:no-repeat;
+  padding: 300px;
+
+}
+.description{
+  display: flex;
+  flex-direction: row;
+}
+
+/* le css de la page boutique  */
+/* le css de face de la page boutique  */
+.pboutique{
+  font-size: 50px;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: center;
+  padding: 300px;
+  background-image: url('boutique1.jpg');
+
+  
+}
+#boutiqueContener{
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+
+}
+.photo2 {
+  font-family: 'Quattrocento', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 16px;
+  
+}
+.photo2 * {
+  box-sizing: border-box;
+  
+}
+/* css de l'image de chaque figure */
+.photo2 img {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+
+/* le css da la page activité individuel */
+.cpa{
+  margin-top: 10%;
+  display: flex;
+  width: 100%;
+}
+.ph-a{
+  width:600px;
+  margin: 25px;
+}
+.p-pa{
+  margin: 5px;
+}
+/* le css de la page blog */
+.pBlog{
+  font-size: 1.8em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: center;
+  background-image: url('ciel.jpg');
+  background-repeat:no-repeat;
+  padding: 307px;
+
+}
+#articleContener{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+
+}
+
+.article {
+  font-family: 'Quattrocento', Arial, sans-serif;
+  text-align: center;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 500px;
+  width: 100%;
+  color: #141414;
+  line-height: 1.4em;
+  font-size: 16px;
+  border: 1px solid rgba(243, 237, 237, 0.589);
+  background-color: rgba(243, 237, 237, 0.589);
+
+}
+
+/* css de l'image de chaque figure */
+.article img {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+/* le css de la page article  */
+.commentp{
+  border: 1px solid rgb(255, 255, 255);
+  background: rgba(250, 243, 243, 0.452);
+  margin: 25px;
+  display: flex;
+}
+.commentp1{
+  margin: 10px;
+}
+/* le css de la page apros de nous */
+.pAproposDeNous{
+  font-size: 1.8em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: center;
+  background-image: url("golfmarrakechatlas.png");
+  background-repeat:no-repeat;
+  padding: 300px;
+
+}
+.pAproposDeNous p {
+  color: white;
+}
+
+.photoAPDN{
+  font-family: 'Quattrocento', Arial, sans-serif;
+  text-align: center;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 500px;
+  width:50%;
+  color: #141414;
+  line-height: 1.4em;
+  font-size: 16px;
+  border: 1px solid rgba(243, 237, 237, 0);
+  }
+  .photoAPDN img{
+    width: 300px;
+  }
+  .equipe{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+/* le csss de la page contact */
+.pContact{
+  font-size: 1.8em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: center;
+  color: beige;
+  background-image: url('marrakech_place.jpg');
+  background-repeat:no-repeat;
+  padding: 300px;
+}
+/* le css de footer */
+.con1{
+  display: flex;
+  justify-content: space-evenly;
+}
+.list_footer{
+  list-style: none;
+}
+.footer{
+  background: #fff2f27a;
+  padding-bottom: 0px;
+}
+/* le css de la page d'inscription */
+.pInscription{
+  font-size: 1.8em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: center;
+  background-image: url('images/marrakech_place.jpg');
+  background-repeat:no-repeat;
+  padding: 150px;
+}
+/* le css de formulaire de la page inscription */
+.forminscription{
+  border: 1px solid white;
+  background-color: rgba(245, 245, 245, 0.788);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+}
+.pConnexion{
+  font-size: 1.8em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: center;
+  background-image: url('images/marrakech_place.jpg');
+  background-repeat:no-repeat;
+  padding: 150px;
+  
+
+}
+@media only screen and (max-width: 600px) {
+  #section1{
+    
+   background-size: 100%;
+   padding-top: 80%;
+
+  
+  }
+  .pActivité{
+    padding-top: 50%;
+    padding: 300px;
+  
+  }
+  #activité{
+    display: flex;
+    flex-direction: column;
+  }
+
+}

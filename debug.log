@@ -1,0 +1,2 @@
+[0822/212549.492:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accès refusé} Un processus a demandé l’accès a un objet, mais il ne bénéficie pas des autorisations nécessaires. (0xc0000022)
+[0822/212549.711:ERROR:exception_snapshot_win.cc(98)] thread ID 10280 not found in process
